@@ -4,4 +4,4 @@
 - Responsive & mobile-friendly. 
 - Simple portfolio website
 - used html,css ,js
-- Take a look:  https://varsha-sagi.github.io/Portfolio-Website/
+- Take a look:  
