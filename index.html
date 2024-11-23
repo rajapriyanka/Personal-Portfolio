@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rajapriyanka R</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#internship">Internships</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project1">Projects</a></li>
+            <li><a href="#stats">Stats</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rajapriyanka R</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#internship" onclick="toggleMenu()">Internships</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#project1" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#stats" onclick="toggleMenu()">Stats</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile pic.webp" alt="Rajapriyanka R profile picture" class="picd" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rajapriyanka R</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin-logo-white-png-images--pictures--becuo-16.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rajapriyankar/'"
+          />
+          <img
+            src="./assets/github-icon-38985-Windows.ico"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rajapriyanka'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about me.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience (2).png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Objective</h3>
+                        <pre>  Fresher <br />Interest:Full Stack Developer</pre>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <pre>B.E Bachelors Degree <br />Final Year</pre>
+            </div>
+          </div>
+          <div class="text-container">
+            <b>Hi, I’m Rajapriyanka R, a motivated computer science graduate eager to kickstart my career in software development. I have a strong foundation in programming, problem-solving, and algorithms, with hands-on experience in Java .
+
+              I enjoy learning new technologies and tackling challenges that help me grow. My academic projects have sharpened my teamwork and analytical thinking, and I’m excited to apply these in real-world scenarios.
+              
+              Outside work, I love to watch series and play keyborad in my leasure time which keeps me creative. I’m enthusiastic about contributing to projects that make a difference and am ready to bring fresh ideas to your team.
+              </b>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#internship'">
+    </section>
+
+
+    <section id="internship">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Internships</h1>
+      <div class="about-containers">
+        <div class="details-container">
+            <div class="article-contain">
+                    <div>
+                        <h3>Web Development</h3><br>
+                        <h3>Company- <span>Unified Mentor</span></h3><br>
+                        <h4>One Month internship:</h4>
+                        <b>HTML/CSS, JavaScript, frameworks, back-end basics, database connection,
+                            full-stack integration, deployment, collaboration, real-world tasks.</b>
+                    </div>
+             </div>
+        </div>
+        <div class="details-container">
+            <div class="article-contain">          
+                    <div>
+                        <h3>Java Full Stack Development</h3><br>
+                        <h3>Company- <span>Infosys Springboard</span></h3><br>
+
+                        <h4>Two Month internship:</h4>
+                        <b>Agile Methodology, Spring Boot, Thymeleaf, UI/UX, backend integration, RecyclerView, API, debugging, testing, collaboration, 
+                           feature development, presentation, insights into app lifecycle. </b>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="about-containers">
+        <div class="details-container">
+            <div class="article-contain">
+                    <div>
+                        <h3>Java Programming</h3><br>
+                        <h4>One-month internship:</h4>
+                        <b>OOP principles, data structures, algorithms. Collaborated on team projects, 
+                           honed debugging skills, and gained practical experience in software development,
+                           fostering a deeper understanding of Java.
+                        </b>
+                    </div>
+             </div>
+         </div>     -->
+    </div>
+    <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#skills'">
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Look Through My</p>
+        <h1 class="title">Skills</h1>
+        <div class="about-containers">
+            <div class="details-container">
+                <div class="article-container">
+                    <img src="./assets/frontend.png" alt="frontend" class="pics">
+                    <article>
+                        <div>
+                            <br>
+                            <h3>Front End Development</h3><br>
+                            <h2>o HTML <br></h2>
+                            <br>
+                            <h2>o CSS <br></h2>
+                            <br>
+                            <h2>o JavaScript <br></h2>
+                           
+                            <br>
+                            <h2>o Thymeleaf<br></h2>
+                           
+
+                        </div>
+                       </article>
+                 </div>
+             </div>    
+            <div class="details-container">
+                <div class="article-container">
+                    <img src="./assets/backend.jpeg" alt="backend" class="pics">
+                    <article>
+                        <div>
+                            <br>
+                            <h3>Backend Development</h3><br>
+                            <h2>o Spring Boot <br></h2>
+                            <br>
+                            <h2>o Git <br></h2>
+                            <br>
+                            <h2>o Mysql <br></h2>
+                        </div>
+                       </article>
+                 </div>
+             </div>    
+            <div class="details-container">
+                <div class="article-container">
+                    <img src="./assets/programming.png" alt="programming" class="pics">
+                    <article>
+                        <div>
+                            <br>
+                            <h3>Programming Languages</h3><br>
+                            <h2>o C <br></h2>
+                            <br>
+                            <h2>o Java <br></h2>
+                            <br>
+                          
+                        </div>
+                       </article>
+                 </div>
+             </div> <br>
+             <!-- <div class="details-container">
+              <div class="article-container">
+                  <img src="./assets/other skills.webp" alt="otherskills" class="pics" style="width: auto;">
+                  <article>
+                      <div>
+                          <br>
+                          <h3>Other Skills</h3><br>
+                          <h2>o Typing <br></h2>
+                          <br>
+                          <h2>o Editing <br></h2>
+                          <br>
+                          <h2>o MS Office <br></h2>
+                          <br>
+                        
+                      </div>
+                     </article>
+               </div>
+           </div>  -->  
+        </div> 
+        <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#project1'">
+    </section>
+
+
+    <section id="project1">
+        <p class="section__text__p1">About My</p>
+        <h1 class="title">Project 1</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/project 1.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <b><h2>Portfolio Website </h2><pre>Html,CSS,Javascript</pre> <br>
+                        My Portfolio Website! It's a dynamic platform illustrating my proficiency as a Frontend Developer. 
+                        Through projects like scientific calculator and more, I showcase my skills in various fields.
+                         The user-friendly design provides insights into my professional journey, while the contact section 
+                         encourages collaboration. Explore the diverse facets of my work and let's connect for exciting opportunities. 
+                         Thank you for visiting!"</b>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center text-white text-yellow-500">
+                        <span class=" mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998"
+                                viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon"
+                                    transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98"
+                                        d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a.709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z"
+                                        fill="#fecd1a" />
+                                </g>
+                            </svg></span>
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#project2'">
+    </section> 
+    <section id="project2">
+        <p class="section__text__p1">About My</p>
+        <h1 class="title">Project 2</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                 <b><h1>Library Management System </h1><pre>Core Java</pre> <br> 
+                  The Library Management System (LMS) is a Java-based application designed to streamline library operations. Built using 
+                  NetBeans, it enables efficient book management, member registration, and tracking of borrow/return transactions. Key features 
+                  include adding, updating, and searching books, managing member records, and issuing or returning books with fine calculations
+                   for delays. The system uses Swing for the user interface and MySQL for database management, connected via JDBC. Its goal is 
+                   to simplify library tasks, enhance efficiency, and maintain accurate records. Ideal for small to medium-sized libraries.
+                 </b>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center text-white text-yellow-500">
+                        <span class=" mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998"
+                                viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon"
+                                    transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98"
+                                        d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a.709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z"
+                                        fill="#fecd1a" />
+                                </g>
+                            </svg></span>
+                        Read more
+                    </a>
+                </div>
+            </div>
+            <div class="section__pic-container">
+                <img src="./assets/project 2.jpg" alt="Profile picture" class="about-pic"/>
+            </div>
+        </div>
+        <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#project3'">
+    </section> 
+
+    <section id="project3">
+        <p class="section__text__p1">About My</p>
+        <h1 class="title">Project 3</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Pharma.jpg" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <h1>             Pharma Automation System           </h1>
+                <pre>using Html,css,JavaScript,Java and My SQL <br>
+                </pre>
+                <div class="text-container">
+                    <b>The Pharma Automation System is a software application designed to streamline pharmaceutical operations.
+                       It automates processes such as inventory management, prescription tracking, and billing to enhance efficiency and 
+                       accuracy. Key features include real-time stock monitoring, automatic reorder alerts, and customer purchase records. 
+                       The system ensures compliance with regulatory standards by managing drug expiration and generating detailed reports. 
+                       With a user-friendly interface and secure database integration, it simplifies pharmacy workflows, reduces manual errors, 
+                       and improves customer service. Suitable for pharmacies of all sizes aiming for seamless operations.</b>
+                       <br>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center text-white text-yellow-500">
+                        <span class=" mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998"
+                                viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon"
+                                    transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98"
+                                        d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a.709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z"
+                                        fill="#fecd1a" />
+                                </g>
+                            </svg></span>
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#stats'">
+    </section> 
+    
+    <section id="stats">
+        <p class="section__text__p1">About My Work</p>
+        <h1 class="title">Stats</h1>
+        <div class="wrapperx">
+            <!-- <div class="containerx num1">
+                <span class="num " data-val="56">2</span>
+                <span class="text">Hackathons</span>
+            </div> -->
+    
+            <div class="containerx">
+    
+                <span class="num" data-val="87">3</span>
+                <span class="text">Projects</span>
+            </div>
+    
+            <div class="containerx">
+    
+                <span class="num" data-val="16">4</span>
+                <span class="text">Workshop</span>
+            </div>
+    
+            <div class="containerx num2">
+    
+                <span class="num " data-val="7">8</span>
+                <span class="text">Courses</span>
+            </div>
+        </div>
+        <img src="./assets/arrow pics.ico" alt="arrow icon" class="arrow" onclick="location.href='#contact'">
+    </section>
+    
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email-icon-101-Windows.jpg" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:rajapriyanka1101@gmail.com">rajapriyanka1101@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin-logo-white-png-images--pictures--becuo-16.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/rajapriyankar/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#About" onclick="location.href='#about'">About</a></li>
+                    <li><a href="#Internship" onclick="location.href='#internship'">Internship</a></li>
+                    <li><a href="#Skills" onclick="location.href='#skills'">Skills</a></li>
+                    <li><a href="#Projects" onclick="location.href='#project1'">Projects</a></li>
+                    <li><a href="#Stats" onclick="location.href='#stats'">Stats</a></li>
+                    <li><a href="#Contact" onclick="location.href='#contact'">Contact</a></li>
+                </ul>
+            </div>
+      </nav>
+      <p>Copyright &#169; Rajapriyanka R All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
